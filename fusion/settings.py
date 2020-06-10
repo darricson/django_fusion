@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(tgscn)fxy%&hwx69_kb+c$+m=l3#oba+*$(-#^^2bfo@-26sa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -95,7 +95,7 @@ DATABASES = {
 DATABASES = {
     'defalt': dj_database_url.config()
 }
-
+"""
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -152,8 +152,9 @@ caminho foi add por problema comum no site do heroku mas nao deu certo: https://
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # email produção
-"""
+
 EMAIL_HOST = 'localhost'
+"""
 EMAIL_HOST_USE = 'no-reply@fusion.com.br'
 EMAIL_PORT = 587
 EMAIL_USE_TSL = True
